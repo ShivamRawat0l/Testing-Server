@@ -1,0 +1,8 @@
+From node:16
+Workdir /usr/src/
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 12345
+RUN node index
+
