@@ -3,6 +3,6 @@ Workdir /usr/src/
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 12345
+EXPOSE 8239
 RUN node index
 
